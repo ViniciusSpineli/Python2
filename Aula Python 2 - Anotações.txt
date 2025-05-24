@@ -1,0 +1,11 @@
+Aula Python 2 - Anotações
+
+
+  - Depois de criar o repositório dentro do nosso GitHub que é bem simples, não tem segredo. Bem intuitivo... O próprio GitHub vai dar alguns comandos para serem feitos!
+  - Criar uma maquina virtual "VENV" para poder usar o projeto lá dentro.
+  - Pedir para a IA o seguinte "Crie o conteúdo de um arquivo .gitignore apropriado para aplicações Python, principalmente feitas em django. O git deve ignorar arquivos do diretório venv e cache do Python, dentre os outros arquivos que não devem ser empurrados para o GitHub".... Pega o resultado e joga dentro do arquivo .gitignore!
+
+
+  - Depois de feito tudo isso rodamos o comando "git init" que vai iniciar o nosso diretório e criar uma pasta oculta chamada .git e cada comando que eu fizer ele vai começar a jogar meus arquivos no meu repositório.
+  - Depois vamos rodar o comando "git add ." esse comando irá jogar tudo la para nosso repositório, este ponto no final vai ser meio que um coringa. Claro qe esse carinha vai ignorar oque ta no gitignore
+  - Próximo comando vai ser ( git commit -m "first commit" ), basicamente vai salvar o nosso git q acabamos de criar. este first commit é só uma descrição;

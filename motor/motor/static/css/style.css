@@ -1,0 +1,38 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* Fundo branco para um look clean */
+    color: #333333; /* Cor de texto principal escura */
+}
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x1080/333333/eeeeee?text=Academia+Moderna');
+    background-size: cover;
+    background-position: center;
+}
+.btn-primary {
+    background-color: #2563eb; /* Azul primário */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #1d4ed8; /* Azul mais escuro no hover */
+}
+.section-title {
+    color: #1f2937; /* Cinza escuro para títulos */
+}
+.feature-card {
+    background-color: #f9fafb; /* Cinza muito claro para cards */
+    border: 1px solid #e5e7eb; /* Borda sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.navbar-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente para o navbar fixo */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}

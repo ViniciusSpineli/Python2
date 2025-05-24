@@ -1,0 +1,57 @@
+# Ambiente virtual
+venv/
+.env/
+.venv/
+
+# Bytecode do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos de log
+*.log
+
+# Arquivos de banco de dados locais
+*.sqlite3
+
+# Arquivos de configuração sensíveis
+*.env
+*.local
+
+# Diretórios do Django
+/staticfiles/
+/media/
+
+# Arquivos de migração desnecessários (opcional — cuidado ao usar!)
+# */migrations/*.py
+*/migrations/__pycache__/
+
+# Arquivos criados por testes
+coverage.*
+htmlcov/
+.tox/
+nosetests.xml
+test-results/
+
+# Cache de pacotes
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Docker / build
+*.egg-info/
+dist/
+build/
+docker-compose.override.yml
+
+# Arquivos do Jupyter (caso use notebooks)
+.ipynb_checkpoints/

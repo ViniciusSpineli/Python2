@@ -9,3 +9,20 @@ Aula Python 2 - Anotações
   - Depois de feito tudo isso rodamos o comando "git init" que vai iniciar o nosso diretório e criar uma pasta oculta chamada .git e cada comando que eu fizer ele vai começar a jogar meus arquivos no meu repositório.
   - Depois vamos rodar o comando "git add ." esse comando irá jogar tudo la para nosso repositório, este ponto no final vai ser meio que um coringa. Claro qe esse carinha vai ignorar oque ta no gitignore
   - Próximo comando vai ser ( git commit -m "first commit" ), basicamente vai salvar o nosso git q acabamos de criar. este first commit é só uma descrição;
+  - Depois vamos rodar o comando (git branch -M main) este comando serve para renomear a branch atual para o nome main
+  - Depois temos o comando (git remote add origin https://github.com/ViniciusSpineli/Python2.git)
+    - Serve para adicionar um repositório remoto chamado origin apontando para a URL especificada.
+      Resumindo: conecta seu repositório local ao repositório online no GitHub
+  - Depois temos o comando (git push -u  origin main), que serve para mandar tudo para o repositório do meu git
+
+
+  - Depois de feito tudo isso ele vai subir tudo para o nosso git.
+
+  - INFORMAÇÃO IMPORTANTE, TODA VEZ QUE FOR SUBIR ALGO NOVO, EXEMPLO NÃO TINHA FEITO O README.MD, FUI LA E PEGUEI DA PASTA DO LEONARDO COM ISSO EU PEGUEI COLOQUEI NA PASTA E TIVEMOS QUE FAZER OS SEGUINTES COMANDOS DENOVO:
+	git add . --> Adicinando tudo que foi adicionado na pasta para o repositório.
+	git commit -m "Adicionei o readme" --> Dando o commit e colocando um comentário só pra falar que foi adicionado outra coisa 
+        git push -u  origin main --> E depois só subimos
+
+  
+  - "python -m venv venv" --> isso é para criar um ambiente virtual venv;
+  - "venv\Scripts\activate" -->  É necessário ativar o ambiente virtual para rodar o requeriment dnv!

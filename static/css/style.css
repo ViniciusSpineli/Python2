@@ -1,0 +1,74 @@
+/* Estilos Globais e Personalizados para MotorWeb */
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Tailwind já aplica bg-gray-100 e text-gray-800, mas pode ser reforçado aqui se necessário */
+}
+
+.hero-bg {
+    background-image: url('https://placehold.co/1920x1080/334155/e2e8f0?text=Garagem+Moderna'); /* Imagem de fundo para a seção hero */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos da Navegação */
+.active-nav {
+    border-bottom: 2px solid #f59e0b; /* Cor âmbar/laranja para o link ativo */
+    color: #f59e0b !important; /* Garante que a cor do texto seja aplicada */
+}
+
+.nav-link {
+    /* As classes do Tailwind são aplicadas diretamente no HTML:
+       px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700
+       Esta seção pode ser usada para overrides ou adições que não são facilmente feitas com Tailwind.
+    */
+}
+
+.nav-link-mobile {
+    /* As classes do Tailwind são aplicadas diretamente no HTML:
+       block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700
+    */
+}
+
+/* Estilos de Botões */
+.btn-primary {
+    /* As classes do Tailwind são aplicadas diretamente no HTML:
+       bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out
+    */
+}
+
+.btn-secondary {
+    /* As classes do Tailwind são aplicadas diretamente no HTML:
+       bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out
+    */
+}
+
+/* Estilos de Cards */
+.card {
+    /* As classes do Tailwind são aplicadas diretamente no HTML:
+       bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105
+    */
+}
+
+/* Estilos do Rodapé */
+.footer-bg {
+    background-color: #1f2937; /* Cinza escuro, conforme definido no HTML original */
+}
+
+/*
+   Comentário: A maioria dos estilos visuais está sendo gerenciada pelo Tailwind CSS diretamente nas classes HTML.
+   Este arquivo style.css é útil para:
+   1. Estilos globais que não são facilmente cobertos por classes utilitárias (ex: `body font-family`).
+   2. Overrides específicos de classes do Tailwind, se necessário (embora seja preferível usar as próprias utilidades do Tailwind).
+   3. Estilos mais complexos ou animações que não são práticas com Tailwind puro.
+   4. Manter uma organização se o projeto crescer e alguns componentes precisarem de CSS dedicado.
+*/
+
+/* Ajuste para o menu mobile começar escondido se o JS não carregar ou demorar */
+/* No HTML, a classe 'hidden' já foi adicionada ao #mobile-menu, então esta regra CSS é um fallback ou reforço. */
+/* #mobile-menu {
+    display: none;
+} */
+
+/* Você pode adicionar mais estilos personalizados aqui conforme necessário. */
+

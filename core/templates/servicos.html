@@ -1,0 +1,175 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - MotorWeb</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-gray-800 text-white sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0">
+                        <img class="h-10 w-auto" src="https://placehold.co/150x50/000000/FFFFFF?text=MotorWeb" alt="Logo MotorWeb">
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="nav-link" data-page="index">Home</a>
+                        <a href="veiculos.html" class="nav-link" data-page="veiculos">Veículos</a>
+                        <a href="servicos.html" class="nav-link" data-page="servicos">Serviços</a>
+                        <a href="sobre.html" class="nav-link" data-page="sobre">Sobre Nós</a>
+                        <a href="contato.html" class="nav-link" data-page="contato">Contato</a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
+                        <span class="sr-only">Abrir menu principal</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" id="icon-hamburger">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" id="icon-x">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="nav-link-mobile" data-page="index">Home</a>
+                <a href="veiculos.html" class="nav-link-mobile" data-page="veiculos">Veículos</a>
+                <a href="servicos.html" class="nav-link-mobile" data-page="servicos">Serviços</a>
+                <a href="sobre.html" class="nav-link-mobile" data-page="sobre">Sobre Nós</a>
+                <a href="contato.html" class="nav-link-mobile" data-page="contato">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="page-content">
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-4xl font-bold text-center mb-10 text-gray-800">Nossos Serviços</h1>
+                <div class="space-y-12">
+                    <div class="flex flex-col md:flex-row items-center bg-gray-50 p-8 rounded-xl shadow-lg">
+                        <div class="md:w-1/3 mb-6 md:mb-0 md:mr-8">
+                            <img src="https://placehold.co/600x400/f0f0f0/333333?text=Manutenção+Completa" alt="[Imagem ilustrativa de Manutenção Completa]" class="rounded-lg shadow-md w-full">
+                        </div>
+                        <div class="md:w-2/3">
+                            <h2 class="text-2xl font-semibold text-amber-600 mb-3"><i class="fas fa-oil-can mr-2"></i> Manutenção Preventiva e Corretiva</h2>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                Oferecemos um plano completo de manutenção para garantir que seu veículo esteja sempre em perfeitas condições. Desde trocas de óleo e filtros até revisões complexas, nossa equipe utiliza peças de qualidade e tecnologia de ponta.
+                            </p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Troca de óleo e filtros</li>
+                                <li>Alinhamento e balanceamento</li>
+                                <li>Revisão de freios e suspensão</li>
+                                <li>Diagnóstico eletrônico</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row-reverse items-center bg-gray-50 p-8 rounded-xl shadow-lg">
+                        <div class="md:w-1/3 mb-6 md:mb-0 md:ml-8">
+                             <img src="https://placehold.co/600x400/e8e8e8/333333?text=Reparos+Especializados" alt="[Imagem ilustrativa de Reparos Especializados]" class="rounded-lg shadow-md w-full">
+                        </div>
+                        <div class="md:w-2/3">
+                            <h2 class="text-2xl font-semibold text-amber-600 mb-3"><i class="fas fa-wrench mr-2"></i> Reparos Mecânicos e Elétricos</h2>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                Nossos mecânicos são altamente qualificados para lidar com qualquer tipo de reparo, seja mecânico ou elétrico. Utilizamos equipamentos modernos para diagnósticos precisos e soluções eficientes para seu carro.
+                            </p>
+                             <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Reparo de motor e câmbio</li>
+                                <li>Sistemas de injeção eletrônica</li>
+                                <li>Ar condicionado automotivo</li>
+                                <li>Parte elétrica geral</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center bg-gray-50 p-8 rounded-xl shadow-lg">
+                        <div class="md:w-1/3 mb-6 md:mb-0 md:mr-8">
+                            <img src="https://placehold.co/600x400/e0e0e0/333333?text=Funilaria+e+Pintura" alt="[Imagem ilustrativa de Funilaria e Pintura]" class="rounded-lg shadow-md w-full">
+                        </div>
+                        <div class="md:w-2/3">
+                            <h2 class="text-2xl font-semibold text-amber-600 mb-3"><i class="fas fa-paint-roller mr-2"></i> Funilaria e Pintura</h2>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                Devolvemos a estética original do seu veículo com serviços de funilaria e pintura de alta qualidade. Utilizamos materiais de primeira linha para garantir um acabamento impecável e duradouro.
+                            </p>
+                             <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Recuperação de para-choques</li>
+                                <li>Pintura geral e retoques</li>
+                                <li>Polimento e cristalização</li>
+                                <li>Martelinho de ouro</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <div class="flex flex-col md:flex-row-reverse items-center bg-gray-50 p-8 rounded-xl shadow-lg">
+                        <div class="md:w-1/3 mb-6 md:mb-0 md:ml-8">
+                             <img src="https://placehold.co/600x400/d8d8d8/333333?text=Venda+de+Peças" alt="[Imagem ilustrativa de Venda de Peças e Acessórios]" class="rounded-lg shadow-md w-full">
+                        </div>
+                        <div class="md:w-2/3">
+                            <h2 class="text-2xl font-semibold text-amber-600 mb-3"><i class="fas fa-cogs mr-2"></i> Venda de Peças e Acessórios</h2>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                Contamos com um vasto estoque de peças originais e de reposição para diversas marcas e modelos. Além disso, oferecemos uma linha completa de acessórios para personalizar e equipar seu veículo.
+                            </p>
+                             <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Peças originais e paralelas</li>
+                                <li>Baterias, pneus e lubrificantes</li>
+                                <li>Acessórios internos e externos</li>
+                                <li>Som automotivo e multimídia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-bg text-gray-300 py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">MotorWeb</h3>
+                    <p class="text-sm">Sua jornada automotiva começa aqui. Qualidade, confiança e os melhores negócios.</p>
+                     <img src="https://placehold.co/150x50/FFFFFF/1f2937?text=MotorWeb+Branco" alt="Logo MotorWeb Rodapé" class="mt-4 h-10 w-auto opacity-75">
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-amber-400 transition-colors">Home</a></li>
+                        <li><a href="veiculos.html" class="hover:text-amber-400 transition-colors">Veículos</a></li>
+                        <li><a href="servicos.html" class="hover:text-amber-400 transition-colors">Serviços</a></li>
+                        <li><a href="sobre.html" class="hover:text-amber-400 transition-colors">Sobre Nós</a></li>
+                        <li><a href="contato.html" class="hover:text-amber-400 transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Siga-nos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mt-6 mb-2">Contato</h3>
+                    <p class="text-sm"><i class="fas fa-phone mr-2"></i> (XX) XXXX-XXXX</p>
+                    <p class="text-sm"><i class="fas fa-envelope mr-2"></i> contato@motorweb.com.br</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>© <span id="currentYear"></span> MotorWeb. Todos os direitos reservados.</p>
+                <p>Desenvolvido com <i class="fas fa-heart text-amber-500"></i> por Seu Nome/Sua Agência</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
